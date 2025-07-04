@@ -154,7 +154,7 @@ span{
 
     
 .hero {
-      background-image: url("hero.jpeg");
+      background-image: url("hero.JPEG");
       background-size: cover;
       height: 350px;
       display: flex;
