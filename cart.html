@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shopping Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="shortcut icon" href="C:\Users\ACER\Desktop\Amazon.com\icons8-amazon-96.png" type="image/x-icon">
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar" aria-label="Site header">
+    <a class="nav-logo" href="#" aria-label="Home">
+      <i class="fa-brands fa-amazon"></i>
+      <span class="logo-text">amazon<span class="logo-smile">.in</span></span>
+    </a>
+
+    <div class="nav-address" role="button" tabindex="0" aria-label="Choose your address">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <div class="addr-hello">Deliver to</div>
+        <div class="addr-place">India</div>
+      </div>
+    </div>
+
+    <form class="nav-search" role="search" aria-label="Search">
+      <select aria-label="Search category">
+        <option selected>All</option>
+        <option>Electronics</option>
+        <option>Books</option>
+        <option>Fashion</option>
+      </select>
+      <input type="search" placeholder="Search" aria-label="Search products" />
+      <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <nav class="nav-right" aria-label="Account links">
+      <a href="#" class="nav-link">
+        <span class="small">Hello, sign in</span>
+        <span class="bold">Account & Lists</span>
+      </a>
+      <a href="#" class="nav-link">
+        <span class="small">Returns</span>
+        <span class="bold">& Orders</span>
+      </a>
+      <a href="#" class="nav-cart" aria-current="page">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="bold">Cart</span>
+        <span class="cart-count" aria-label="Items in cart">2</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="#">Home</a>
+    <span>›</span>
+    <a href="#">Your Cart</a>
+  </div>
+
+  <!-- Main -->
+  <main class="container">
+    <!-- Left: Cart items -->
+    <section class="cart" aria-labelledby="cart-heading">
+      <h1 id="cart-heading">Shopping Cart</h1>
+      <div class="price-note">Price</div>
+
+      <!-- Item 1 -->
+      <article class="cart-item" aria-labelledby="item-1-title">
+        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=640&auto=format&fit=crop" alt="Wireless over-ear headphones in black" />
+        <div class="item-info">
+          <a id="item-1-title" class="item-title" href="#">Wireless Over‑Ear Headphones with ANC</a>
+          <div class="item-meta">Brand: SoundX • In stock</div>
+          <div class="item-badges">
+            <span class="prime">Prime</span>
+            <span class="deal">Deal</span>
+          </div>
+          <div class="item-actions">
+            <label>
+              Qty
+              <select aria-label="Quantity for Wireless Over-Ear Headphones">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </label>
+            <button class="link">Delete</button>
+            <button class="link">Save for later</button>
+            <button class="link">Share</button>
+          </div>
+          <label class="gift">
+            <input type="checkbox" /> This is a gift
+          </label>
+        </div>
+        <div class="item-price">₹5,499.00</div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="cart-item" aria-labelledby="item-2-title">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=640&auto=format&fit=crop" alt="Hardcover book on a wooden table" />
+        <div class="item-info">
+          <a id="item-2-title" class="item-title" href="#">"Designing for Joy" (Hardcover)</a>
+          <div class="item-meta">Author: A. Rivera • In stock</div>
+          <div class="item-badges">
+            <span class="prime">Prime</span>
+          </div>
+          <div class="item-actions">
+            <label>
+              Qty
+              <select aria-label="Quantity for Designing for Joy">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </label>
+            <button class="link">Delete</button>
+            <button class="link">Save for later</button>
+            <button class="link">Share</button>
+          </div>
+          <label class="gift">
+            <input type="checkbox" /> This is a gift
+          </label>
+        </div>
+        <div class="item-price">₹799.00</div>
+      </article>
+
+      <div class="cart-subtotal" aria-live="polite">
+        Subtotal (2 items): <span class="subtotal-price">₹6,298.00</span>
+      </div>
+    </section>
+
+    <!-- Right: Summary -->
+    <aside class="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Order Summary</h2>
+      <div class="summary-row"><span>Items:</span><span>₹6,298.00</span></div>
+      <div class="summary-row"><span>Delivery:</span><span class="free">FREE</span></div>
+      <div class="summary-row total"><span>Order Total:</span><span>₹6,298.00</span></div>
+      <label class="gift">
+        <input type="checkbox" /> This order contains a gift
+      </label>
+      <button class="checkout">Proceed to Buy</button>
+
+      <div class="secure-note">
+        <i class="fa-solid fa-lock"></i> Secure transaction
+      </div>
+
+      <div class="emi-box" role="note" aria-label="EMI available">
+        <strong>EMI available</strong>
+        <p>Easy monthly installments on orders over ₹3,000.</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#" class="back-to-top">Back to top</a>
+    <div class="foot-links">
+      <a href="#">Conditions of Use & Sale</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">Help</a>
+    </div>
+    <p>© 2025 Demo Cart UI. Educational use only.</p>
+  </footer>
+</body>
+</html>
+```
+
+---

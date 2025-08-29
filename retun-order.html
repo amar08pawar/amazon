@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Return Order</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="return.css" />
+   <link rel="shortcut icon" href="C:\Users\ACER\Desktop\Amazon.com\icons8-amazon-96.png" type="image/x-icon">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">↩︎</span>
+      <h1>Return Order</h1>
+    </div>
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="#">Home</a> <span>/</span>
+      <a href="#">Orders</a> <span>/</span>
+      <span aria-current="page">Return</span>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="card-title">Start a Return</h2>
+      <p class="card-subtitle">Provide the details below to create your return request.</p>
+
+      <form class="return-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+        <!-- Order Details -->
+        <fieldset>
+          <legend>Order Details</legend>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="orderId">Order ID <span class="req">*</span></label>
+              <input type="text" id="orderId" name="orderId" placeholder="e.g., #123-4567890-1234567" required />
+              <small class="hint">Find this in your order confirmation email or orders page.</small>
+            </div>
+
+            <div class="field">
+              <label for="orderDate">Order Date</label>
+              <input type="date" id="orderDate" name="orderDate" />
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" pattern="[\d+\-\s()]{7,}" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="itemName">Item / Product Name <span class="req">*</span></label>
+            <input type="text" id="itemName" name="itemName" placeholder="Product name or SKU" required />
+          </div>
+        </fieldset>
+
+        <!-- Return Info -->
+        <fieldset>
+          <legend>Return Information</legend>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="reason">Reason for Return <span class="req">*</span></label>
+              <select id="reason" name="reason" required>
+                <option value="" disabled selected>Select a reason</option>
+                <option value="wrong-item">Received wrong item</option>
+                <option value="damaged">Damaged on arrival</option>
+                <option value="defective">Defective / not working</option>
+                <option value="not-as-described">Not as described</option>
+                <option value="size-fit">Size / fit issue</option>
+                <option value="changed-mind">Changed my mind</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <span class="label">Item Condition</span>
+              <div class="choices">
+                <label><input type="radio" name="condition" value="unopened" required /> Unopened</label>
+                <label><input type="radio" name="condition" value="opened" /> Opened</label>
+                <label><input type="radio" name="condition" value="used" /> Used</label>
+                <label><input type="radio" name="condition" value="damaged" /> Damaged</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Describe the issue</label>
+            <textarea id="details" name="details" rows="4" placeholder="Add any helpful details..."></textarea>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="photos">Upload Photos (optional)</label>
+              <input type="file" id="photos" name="photos" accept="image/*" multiple />
+              <small class="hint">Up to 5 images. JPG/PNG recommended.</small>
+            </div>
+
+            <div class="field">
+              <label for="resolution">Preferred Resolution <span class="req">*</span></label>
+              <select id="resolution" name="resolution" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="refund">Refund</option>
+                <option value="replacement">Replacement</option>
+                <option value="store-credit">Store Credit</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Pickup / Return Method -->
+        <fieldset>
+          <legend>Pickup / Return Method</legend>
+
+          <div class="field">
+            <span class="label">Method</span>
+            <div class="choices">
+              <label><input type="radio" name="method" value="pickup" required /> Schedule a pickup</label>
+              <label><input type="radio" name="method" value="dropoff" /> Drop off at location</label>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="address">Pickup Address</label>
+              <textarea id="address" name="address" rows="3" placeholder="House/Flat, Street, City, State, PIN"></textarea>
+            </div>
+            <div class="field">
+              <label for="pickupDate">Preferred Pickup Date</label>
+              <input type="date" id="pickupDate" name="pickupDate" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Agreement -->
+        <div class="agreement">
+          <label>
+            <input type="checkbox" name="agree" required />
+            I agree to the <a href="#" target="_blank" rel="noopener">return policy</a>.
+          </label>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+          <button type="reset" class="btn ghost">Reset</button>
+          <button type="submit" class="btn primary">Submit Return Request</button>
+        </div>
+
+        <p class="footnote">You’ll receive a confirmation email after submitting. We typically review returns within 24–48 hours.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Your Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>

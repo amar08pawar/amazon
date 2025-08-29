@@ -6,57 +6,52 @@
     <title>Amazon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+   <link rel="shortcut icon" href="C:\Users\ACER\Desktop\Amazon.com\icons8-amazon-96.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <heder>
-           <div class="navbar">
-        <div class="nav-logo border">
-            <div class="logo"></div>
-            
-        </div>
-        <div class="nav-address border">
-            <p class="add-first " > Deliver to</p>
-            
-            <div class="add-icon ">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="add-second ">India</p>
-            </div>
-        </div>
+   <header class="navbar" aria-label="Site header">
+    <a class="nav-logo" href="#" aria-label="Home">
+      <i class="fa-brands fa-amazon"></i>
+      <span class="logo-text">amazon<span class="logo-smile">.in</span></span>
+    </a>
 
-        <div class="nav-search">
+    <div class="nav-address" role="button" tabindex="0" aria-label="Choose your address">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <div class="addr-hello">Deliver to</div>
+        <div class="addr-place">India</div>
+      </div>
+    </div>
 
-            <select class="search-select">
-                <option>All</option>
-            </select>
-            <input placeholder="search amazon" class="search-input">
+    <form class="nav-search" role="search" aria-label="Search">
+      <select aria-label="Search category">
+        <option selected>All</option>
+        <option>Electronics</option>
+        <option>Books</option>
+        <option>Fashion</option>
+      </select>
+      <input type="search" placeholder="Search" aria-label="Search products" />
+      <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
 
-            <div class="search-icon" >
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-           </div>
+    <nav class="nav-right" aria-label="Account links">
+      <a href="#" class="nav-link">
+        <span class="small">Hello, sign in</span>
+        <span class="bold">Account & Lists</span>
+      </a>
+      <a href="#" class="nav-link">
+        <span class="small">Returns</span>
+        <span class="bold">& Orders</span>
+      </a>
+      <a href="#" class="nav-cart" aria-current="page">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="bold">Cart</span>
+        <span class="cart-count" aria-label="Items in cart">2</span>
+      </a>
+    </nav>
+  </header>
 
-            <div class="search-return border">
-
-           <p><span> Sign in</span></p>
-           
-            <p class="nav-second">Account & lists</p>
-           </div>
-
-           
-           <div class="search-return border">
-
-           <p><span> Return</span></p>
-           
-            <p class="nav-second"> & orders</p>
-           </div>
-
-           <div class="nav-cart border">
-            <i class="fa-solid fa-cart-shopping"></i>
-          cart
-           </div>
-           </div>
 
            <div class="panel">
             <div class="panel-all border">
@@ -64,21 +59,21 @@
                 All
             </div>
             <div class="panel-ops">
-                <p><a>Today's Deals</a></p>
+                <p><a href="sign-in\Today-deals.html">Today's Deals</a></p>
                 <p><a>Customer service</a></p>
                 <p><a>Registry</a></p>
-                <p><a>Gift Cards</a></p>
+                <p><a href="sign-in\gift-card.html">Gift Cards</a></p>
                 <p><a>Sell </a></p>
             </div>
 
-            <div class="panel-deals border">
+            <div class="panel-deals">
                 Shop deals in Electroinics
             </div>
            </div>
     </heder>
-<div class="hero" background-image="hero.jpg">
+<div class="hero">
     <div class="message">
-       <p> You are on amazon.com. You can also shop on Amazon india for millions of products with fast local delivery. <a href="#">  Click here to go amazon.in</a></p>
+       <p> You are on amazon.com. You can also shop on Amazon india for millions of products with fast local delivery. <a href="https://www.amazon.in">  Click here to go amazon.in</a></p>
     </div>
 </div>
 
@@ -157,6 +152,24 @@
             <a>Amazon Science</a>
 
         </ul>
+
+         <ul>
+            <p>Get you Know Us</p>
+               <a>Careers</a>
+             <a>Blog</a>
+             <a>About Amazon</a>
+             <a>Invester Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+
+             <ul>
+            <p>Get you Know Us</p>
+               <a>Careers</a>
+             <a>Blog</a>
+             <a>About Amazon</a>
+             <a>Invester Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
     </div>
 
     <div class="foot-panel3">
@@ -164,6 +177,8 @@
     &#169; 1996-2023, Amazon.com, Inc. or its affiliates
     </div>
 </footer>
+
+
 
 
 </body>

@@ -1,0 +1,145 @@
+
+
+
+/* ===== Base ===== */
+:root {
+  --bg: #e3e6e6;         /* Amazon-esque gray */
+  --nav: #131921;        /* dark header */
+  --nav-accent: #232f3e; /* secondary header */
+  --text: #0f1111;
+  --muted: #565959;
+  --link: #007185;
+  --prime: #00a8e1;
+  --deal: #b12704;
+  --card: #fff;
+  --border: #d5d9d9;
+  --focus: #ff9900;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+img { max-width: 100%; display: block; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { cursor: pointer; }
+
+/* ===== Header / Navbar ===== */
+.navbar {
+  display: grid;
+  grid-template-columns: 180px 220px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  background: var(--nav);
+  color: #fff;
+  padding: 8px 14px;
+}
+.nav-logo { display: flex; align-items: center; gap: 8px; color: #fff; }
+.nav-logo i { font-size: 28px; }
+.logo-text { font-weight: 700; letter-spacing: .2px; }
+.logo-smile { color: #ff9900; }
+
+.nav-address { display:flex; align-items:center; gap:8px; padding:6px; border-radius:8px; }
+.nav-address:focus { outline: 2px solid var(--focus); outline-offset: 2px; }
+.addr-hello { font-size: 12px; color: #ccc; }
+.addr-place { font-weight: 600; }
+
+.nav-search { display: grid; grid-template-columns: 120px 1fr 44px; background:#fff; border-radius: 8px; overflow: hidden; }
+.nav-search select,
+.nav-search input { border: none; padding: 12px; font-size: 14px; }
+.nav-search input { border-left: 1px solid var(--border); }
+.nav-search .search-btn { border: none; background: #ff9900; display:grid; place-items:center; font-size: 18px; }
+
+.nav-right { display: flex; align-items: center; gap: 16px; }
+.nav-link { color: #fff; display: grid; line-height: 1.1; }
+.nav-link .small { font-size: 12px; color:#ddd; }
+.nav-link .bold { font-weight: 700; }
+.nav-cart { position: relative; color: #fff; display:flex; align-items:center; gap:8px; }
+.cart-count { position:absolute; top:-6px; right:-8px; background:#f08804; color:#111; font-weight:700; font-size:12px; padding:2px 6px; border-radius: 999px; }
+
+/* ===== Breadcrumbs ===== */
+.breadcrumbs { display:flex; gap:8px; align-items:center; padding: 10px 14px; font-size: 14px; background: var(--nav-accent); color:#fff; }
+.breadcrumbs a { color:#fff; text-decoration: none; }
+.breadcrumbs span { opacity:.7; }
+
+/* ===== Layout ===== */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 18px;
+  padding: 18px;
+  align-items: start;
+}
+
+/* ===== Cart ===== */
+.cart { background: var(--card); border:1px solid var(--border); border-radius: 10px; padding: 16px; }
+.cart h1 { font-size: 24px; margin: 6px 0 12px; }
+.price-note { text-align: right; color: var(--muted); font-size: 14px; }
+
+.cart-item { display: grid; grid-template-columns: 140px 1fr 120px; gap: 14px; padding: 16px 0; border-top: 1px solid var(--border); }
+.cart-item:first-of-type { border-top: none; }
+.item-info { display: grid; gap: 8px; }
+.item-title { font-weight: 600; color: var(--text); }
+.item-meta { color: var(--muted); font-size: 13px; }
+.item-badges { display:flex; gap:8px; }
+.item-badges .prime { background: #e6f7fc; color: var(--prime); border:1px solid #b6e6f4; padding:2px 6px; border-radius: 6px; font-size:12px; }
+.item-badges .deal { background: #f7e1dd; color: var(--deal); border:1px solid #e9c1b9; padding:2px 6px; border-radius: 6px; font-size:12px; }
+
+.item-actions { display:flex; gap:12px; align-items:center; flex-wrap: wrap; }
+.item-actions select { padding: 6px 8px; border:1px solid var(--border); border-radius: 8px; background:#fff; }
+.link { background:none; border:none; color: var(--link); padding:0; }
+.link:hover { text-decoration: underline; }
+
+.gift { font-size: 14px; color: var(--text); display:flex; gap:8px; align-items:center; }
+.item-price { text-align: right; font-weight: 700; font-size: 18px; }
+
+.cart-subtotal { text-align: right; padding-top: 16px; font-size: 18px; }
+.subtotal-price { font-weight: 700; }
+
+/* ===== Summary ===== */
+.summary { background: var(--card); border:1px solid var(--border); border-radius: 10px; padding: 16px; position: sticky; top: 12px; }
+.summary h2 { font-size: 18px; margin: 0 0 12px; }
+.summary-row { display:flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed var(--border); }
+.summary-row:last-of-type { border-bottom: none; }
+.summary-row.total { font-weight: 700; }
+.summary .free { color: #067d62; font-weight: 600; }
+.checkout { width: 100%; padding: 10px 12px; background:#ffd814; border: 1px solid #f0c14b; border-radius: 8px; font-weight: 700; }
+.checkout:hover { filter: brightness(0.98); }
+.secure-note { color: var(--muted); font-size: 13px; margin-top: 10px; display:flex; gap:8px; align-items:center; }
+.emi-box { margin-top: 12px; padding: 10px; border:1px solid var(--border); border-radius: 8px; background:#fafafa; }
+
+/* ===== Footer ===== */
+.footer { text-align:center; color:#37475a; padding: 24px 12px; }
+.back-to-top { display:inline-block; background:#37475a; color:#fff; padding: 10px 16px; border-radius: 8px; margin-bottom: 12px; }
+.foot-links { display:flex; gap:18px; justify-content:center; margin: 10px 0; }
+.foot-links a { color:#37475a; }
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .container { grid-template-columns: 1fr; }
+  .summary { position: static; }
+}
+
+@media (max-width: 768px) {
+  .navbar { grid-template-columns: 1fr; grid-auto-rows: min-content; gap:10px; }
+  .nav-search { grid-template-columns: 90px 1fr 44px; }
+  .cart-item { grid-template-columns: 100px 1fr; }
+  .item-price { grid-column: 2; text-align: left; }
+  .price-note, .cart-subtotal { text-align: left; }
+}
+
+@media (max-width: 420px) {
+  .nav-right { gap: 10px; }
+  .nav-address { display: none; }
+  .breadcrumbs { font-size: 12px; }
+  .cart h1 { font-size: 20px; }
+}
+
+/* ===== Accessibility Focus Styles ===== */
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 6px; }
+
