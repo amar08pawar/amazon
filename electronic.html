@@ -1,0 +1,141 @@
+<!--
+File set: Save these two files in the same folder
+1) index.html
+2) styles.css
+
+Open index.html in a browser to view the page.
+-->
+
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amazon — Electronics</title>
+  <link rel="stylesheet" href="electronic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="C:\Users\ACER\Desktop\Amazon.com\icons8-amazon-96.png" type="image/x-icon">
+ 
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="logo">amaz<span>on</span></div>
+      <div class="search">
+        <input type="search" placeholder="Search electronics, phones, laptops..." aria-label="search">
+        <button>Search</button>
+      </div>
+      <div class="actions">
+        <button class="signin">Sign in</button>
+        <button class="cart">Cart <span class="cart-count">2</span></button>
+      </div>
+    </div>
+
+    <nav class="category-nav">
+      <a href="#">All</a>
+      <a href="#">Mobiles</a>
+      <a href="#">Laptops</a>
+      <a href="#">Cameras</a>
+      <a href="#">Accessories</a>
+      <a href="#">TV & Home</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Today's Electronics Deals</h1>
+        <p>Top picks on phones, laptops, cameras — handpicked for you.</p>
+        <a class="btn-primary" href="#products">Shop Now</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1200&q=80" alt="electronics hero">
+    </section>
+
+    <section id="products" class="products-grid">
+      <!-- Product card 1 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=60" alt="Phone">
+        <div class="card-body">
+          <h3>Smartphone X100</h3>
+          <p class="price">₹29,999</p>
+          <p class="rating">★★★★☆ <small>(1,254)</small></p>
+          <div class="card-actions">
+            <button class="btn-outline">View</button>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product card 2 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=60" alt="Laptop">
+        <div class="card-body">
+          <h3>UltraBook Pro 14"</h3>
+          <p class="price">₹74,499</p>
+          <p class="rating">★★★★★ <small>(3,987)</small></p>
+          <div class="card-actions">
+            <button class="btn-outline">View</button>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product card 3 -->
+      <article class="card">
+        <img src="sign-in\ele.png" alt="Camera">
+        <div class="card-body">
+          <h3>Mirrorless Camera Z6</h3>
+          <p class="price">₹55,000</p>
+          <p class="rating">★★★★☆ <small>(876)</small></p>
+          <div class="card-actions">
+            <button class="btn-outline">View</button>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product card 4 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1526178611019-6f4b6d5e1b1b?w=800&q=60" alt="Headphones">
+        <div class="card-body">
+          <h3>Noise Cancelling Headphones</h3>
+          <p class="price">₹9,499</p>
+          <p class="rating">★★★★☆ <small>(5,432)</small></p>
+          <div class="card-actions">
+            <button class="btn-outline">View</button>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- more cards can be duplicated -->
+    </section>
+
+    <aside class="sidebar">
+      <div class="card small">
+        <h4>Filter by Price</h4>
+        <input type="range" min="1000" max="100000" value="50000">
+      </div>
+
+      <div class="card small">
+        <h4>Top Brands</h4>
+        <ul>
+          <li><label><input type="checkbox"> Brand A</label></li>
+          <li><label><input type="checkbox"> Brand B</label></li>
+          <li><label><input type="checkbox"> Brand C</label></li>
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 amaz<span>on</span>. Built for demo & practice.</p>
+  </footer>
+
+</body>
+</html>
+

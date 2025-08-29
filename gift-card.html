@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amazon-style Gift Card — Demo</title>
+  <link rel="stylesheet" href="gift-card.css" />
+  
+   <link rel="shortcut icon" href="C:\Users\ACER\Desktop\Amazon.com\icons8-amazon-96.png" type="image/x-icon">
+  
+</head>
+<body>
+  <main class="container">
+    <section class="left">
+      <h1>Create a Gift Card</h1>
+
+      <form id="cardForm" class="form" oninput="updatePreview()">
+        <label>
+          Amount (₹)
+          <input id="amount" name="amount" type="number" min="100" step="1" value="1500" />
+        </label>
+
+        <label>
+          Recipient name
+          <input id="recipient" name="recipient" type="text" placeholder="e.g. Rahul" value="Amar" />
+        </label>
+
+        <label>
+          From
+          <input id="from" name="from" type="text" placeholder="Your name" value="Friend" />
+        </label>
+
+        <label>
+          Message (max 120 chars)
+          <textarea id="message" name="message" maxlength="120">Happy birthday! Enjoy a treat :)</textarea>
+        </label>
+
+        <div class="actions">
+          <button id="downloadBtn" type="button">Download PNG</button>
+          <button id="printBtn" type="button">Print</button>
+          <button id="resetBtn" type="button">Reset</button>
+        </div>
+
+        <p class="note">This is a demo/gift-card preview — replace logos and text before commercial use.</p>
+      </form>
+    </section>
+
+    <section class="right">
+      <div class="card-stage">
+        <!-- the visible preview (styled like a card) -->
+        <div id="cardPreview" class="gift-card" role="img" aria-label="Gift card preview">
+          <div class="gc-top">
+            <div class="gc-brand">amazon</div>
+            <div class="gc-amount">₹<span id="pvAmount">1500</span></div>
+          </div>
+
+          <div class="gc-body">
+            <div class="gc-title">Gift Card</div>
+            <div class="gc-message" id="pvMessage">Happy birthday! Enjoy a treat :)</div>
+          </div>
+
+          <div class="gc-footer">
+            <div class="gc-to"><strong>To:</strong> <span id="pvRecipient">Amar</span></div>
+            <div class="gc-from"><strong>From:</strong> <span id="pvFrom">Friend</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tips">
+        <h3>Tips</h3>
+        <ul>
+          <li>Choose an amount and write a short message.</li>
+          <li>Use <strong>Download PNG</strong> to save an image you can send or print.</li>
+          <li>Replace the brand/graphics if you plan to distribute commercially.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="gift-card.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!Doctype html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Today's Deals — Amazon Style</title>
+  <link rel="stylesheet" href="Toady-deals.css" />
+  <!-- Icons for stars & small UI bits -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+  
+   <link rel="shortcut icon" href="C:\Users\ACER\Desktop\Amazon.com\icons8-amazon-96.png" type="image/x-icon">
+  
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="nav__left">
+      <a class="nav__logo" href="#"><span class="logo-am">am</span><span class="logo-zn">azon</span><span class="logo-dot">.in</span></a>
+      <div class="nav__deliver">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="deliver-text">
+          <span class="small">Deliver to</span>
+          <span class="bold">India</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="nav__search" action="#">
+      <select aria-label="Category" class="search-cat">
+        <option selected>All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Home</option>
+      </select>
+      <input class="search-input" type="search" placeholder="Search Today’s Deals" />
+      <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <div class="nav__right">
+      <a class="nav-link" href="#"><span class="small">Hello, sign in</span><span class="bold">Account & Lists</span></a>
+      <a class="nav-link" href="#"><span class="small">Returns</span><span class="bold">& Orders</span></a>
+      <a class="nav-cart" href="#"><i class="fa-solid fa-cart-shopping"></i><span class="bold">Cart</span></a>
+    </div>
+  </header>
+
+  <!-- Sub Nav -->
+  <nav class="subnav">
+    <button class="hamburger"><i class="fa-solid fa-bars"></i> All</button>
+    <a href="#" class="subnav-link active">Today’s Deals</a>
+    <a href="#" class="subnav-link">Coupons</a>
+    <a href="#" class="subnav-link">Lightning Deals</a>
+    <a href="#" class="subnav-link">Prime Early Access</a>
+    <a href="#" class="subnav-link">Clearance</a>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="page">
+    <!-- Filters -->
+    <aside class="filters">
+      <h2>Filter</h2>
+
+      <section class="filter-group">
+        <h3>Deal Type</h3>
+        <label><input type="checkbox" /> Deal of the Day</label>
+        <label><input type="checkbox" /> Lightning Deal</label>
+        <label><input type="checkbox" /> Limited-time Deal</label>
+      </section>
+
+      <section class="filter-group">
+        <h3>Department</h3>
+        <label><input type="checkbox" /> Electronics</label>
+        <label><input type="checkbox" /> Fashion</label>
+        <label><input type="checkbox" /> Home & Kitchen</label>
+        <label><input type="checkbox" /> Beauty</label>
+        <label><input type="checkbox" /> Books</label>
+      </section>
+
+      <section class="filter-group">
+        <h3>Discount</h3>
+        <label><input type="checkbox" /> 10% off or more</label>
+        <label><input type="checkbox" /> 25% off or more</label>
+        <label><input type="checkbox" /> 50% off or more</label>
+        <label><input type="checkbox" /> 70% off or more</label>
+      </section>
+
+      <section class="filter-group">
+        <h3>Price</h3>
+        <label><input name="price" type="radio" /> Under ₹500</label>
+        <label><input name="price" type="radio" /> ₹500 – ₹1,000</label>
+        <label><input name="price" type="radio" /> ₹1,000 – ₹5,000</label>
+        <label><input name="price" type="radio" /> ₹5,000 & Above</label>
+      </section>
+
+      <button class="clear-btn" type="button">Clear all</button>
+    </aside>
+
+    <!-- Deals Grid -->
+    <section class="grid">
+      <!-- Card 1 -->
+      <article class="deal-card">
+        <a href="#" class="deal-media">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=60" alt="Wireless Headphones" />
+          <span class="badge badge-red">Deal of the day</span>
+        </a>
+        <div class="deal-info">
+          <h4 class="deal-title">Wireless Noise-Cancelling Headphones</h4>
+          <div class="rating">
+            <span class="stars" aria-label="4.5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+            </span>
+            <span class="count">7,842</span>
+          </div>
+          <div class="price-row">
+            <span class="price">₹3,999</span>
+            <span class="mrp">M.R.P: <s>₹8,999</s></span>
+            <span class="off">55% off</span>
+            <span class="prime"><i class="fa-brands fa-amazon"></i> Prime</span>
+          </div>
+          <div class="progress">
+            <div class="bar" style="--p:78%"></div>
+            <span class="progress-text">78% claimed</span>
+          </div>
+          <button class="cta">See this deal</button>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="deal-card">
+        <a href="#" class="deal-media">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&q=60" alt="Fitness Smartwatch" />
+          <span class="badge badge-orange">Limited time deal</span>
+        </a>
+        <div class="deal-info">
+          <h4 class="deal-title">Fitness Smartwatch with SpO₂ & GPS</h4>
+          <div class="rating">
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+            <span class="count">12,301</span>
+          </div>
+          <div class="price-row">
+            <span class="price">₹2,499</span>
+            <span class="mrp">M.R.P: <s>₹4,999</s></span>
+            <span class="off">50% off</span>
+            <span class="prime"><i class="fa-brands fa-amazon"></i> Prime</span>
+          </div>
+          <div class="progress">
+            <div class="bar" style="--p:42%"></div>
+            <span class="progress-text">42% claimed</span>
+          </div>
+          <button class="cta">See this deal</button>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="deal-card">
+        <a href="#" class="deal-media">
+          <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?w=800&q=60" alt="Mixer Grinder" />
+          <span class="badge badge-green">Lightning deal</span>
+        </a>
+        <div class="deal-info">
+          <h4 class="deal-title">750W Mixer Grinder with 3 Jars</h4>
+          <div class="rating">
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+            <span class="count">3,118</span>
+          </div>
+          <div class="price-row">
+            <span class="price">₹1,899</span>
+            <span class="mrp">M.R.P: <s>₹3,499</s></span>
+            <span class="off">46% off</span>
+          </div>
+          <div class="progress">
+            <div class="bar" style="--p:90%"></div>
+            <span class="progress-text">Ends in 02:15:43</span>
+          </div>
+          <button class="cta">See this deal</button>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="deal-card">
+        <a href="#" class="deal-media">
+          <img src="https://images.unsplash.com/photo-1604335399105-a0c19c5d61fe?w=400&q=60" alt="Sneakers" />
+          <span class="badge badge-orange">Limited time deal</span>
+        </a>
+        <div class="deal-info">
+          <h4 class="deal-title">Breathable Running Sneakers</h4>
+          <div class="rating">
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+            <span class="count">1,457</span>
+          </div>
+          <div class="price-row">
+            <span class="price">₹1,299</span>
+            <span class="mrp">M.R.P: <s>₹2,199</s></span>
+            <span class="off">41% off</span>
+            <span class="prime"><i class="fa-brands fa-amazon"></i> Prime</span>
+          </div>
+          <div class="progress">
+            <div class="bar" style="--p:12%"></div>
+            <span class="progress-text">Just started</span>
+          </div>
+          <button class="cta">See this deal</button>
+        </div>
+      </article>
+
+      <!-- Duplicate/extend cards as needed -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#" class="backtop">Back to top</a>
+    <div class="foot-grid">
+      <div>
+        <h4>Get to Know Us</h4>
+        <a href="#">About</a><a href="#">Careers</a><a href="#">Press</a>
+      </div>
+      <div>
+        <h4>Connect with Us</h4>
+        <a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a>
+      </div>
+      <div>
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell on Amazon</a><a href="#">Advertise</a><a href="#">Become an Affiliate</a>
+      </div>
+      <div>
+        <h4>Let Us Help You</h4>
+        <a href="#">Your Account</a><a href="#">Returns Centre</a><a href="#">Help</a>
+      </div>
+    </div>
+    <p class="copy">© 2025 — Demo “Today’s Deals” UI</p>
+  </footer>
+</body>
+</html>
