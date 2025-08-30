@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.signin-container {
+    width: 350px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.signin-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    background: #fff;
+}
+
+.signin-box h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.signin-btn {
+    width: 100%;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    background-color: #e6b93c;
+}
+
+.terms {
+    font-size: 12px;
+    color: #111;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.terms a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.help-link {
+    font-size: 14px;
+    color: #0066c0;
+    text-decoration: none;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
+.new-account {
+    margin-top: 20px;
+}
+
+.new-account p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.create-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    font-size: 14px;
+    background: #e7e9ec;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background: #d7d9dc;
+}
