@@ -67,6 +67,14 @@ body{
     padding: 10px 1rem;
     flex-wrap: wrap;
 }
+.panel-deals a{
+   
+    color: white;
+  text-decoration: none;
+}
+.panel-deals a::hover{
+    text-decoration: underline;
+}
 
 .panel-ops p {
     display: inline;
@@ -224,4 +232,5 @@ footer {
     }
 }
     
+
 
