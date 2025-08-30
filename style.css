@@ -72,7 +72,7 @@ body{
     color: white;
   text-decoration: none;
 }
-.panel-deals a::hover{
+.panel-deals a:hover{
     text-decoration: underline;
 }
 
@@ -232,5 +232,6 @@ footer {
     }
 }
     
+
 
 
