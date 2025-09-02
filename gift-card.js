@@ -38,9 +38,8 @@ async function downloadCard(){
   // Draw a simplified rendering by serializing computed styles and drawing text/images.
   // For fidelity, we'll draw background and then use foreignObject approach by drawing the node via SVG.
 
-  const data = `
-  <svg xmlns='http://www.w3.org/2000/svg' width='${rect.width}' height='${rect.height}'>
-    <foreignObject width='100%' height='100%'>
+ const data = `
+<svg xmlns="https://www.w3.org/2000/svg" width="${rect.width}" height="${rect.height}">
       ${new XMLSerializer().serializeToString(node)}
     </foreignObject>
   </svg>`;
@@ -113,3 +112,4 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePreview();
   });
 });
+
